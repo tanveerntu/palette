@@ -6,15 +6,7 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from matplotlib.colors import to_hex
 
-# ---- HIDE STREAMLIT STYLE ----
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
 st.title("Color Palette Generator")
 st.header("Load any Image to Generate Color Palette of its top 7 Colors")
