@@ -19,6 +19,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 st.title("Color Palette Generator")
 st.header("Load any Image to Generate Color Palette of its top 7 Colors")
 st.write("Palette Generation may take a few seconds after loading the image")
+number = st.slider('Max. Number of colors in the Palette', 0, 10, 5)
 
 uploaded_file = st.file_uploader("", type=['jpg','png','jpeg'])
 if uploaded_file is not None:
