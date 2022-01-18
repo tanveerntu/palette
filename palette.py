@@ -6,6 +6,7 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from matplotlib.colors import to_hex
 
+st.title("Color Palette Generator)
 
 uploaded_file = st.file_uploader("", type=['jpg','png','jpeg'])
 if uploaded_file is not None:
