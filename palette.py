@@ -6,6 +6,16 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from matplotlib.colors import to_hex
 
+# ---- HIDE STREAMLIT STYLE ----
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.title("Color Palette Generator")
 st.header("Load any Image to Generate Color Palette of its top 7 Colors")
 st.write("Palette Generation may take a few seconds after loading the image")
@@ -35,7 +45,7 @@ if uploaded_file is not None:
     for color in palette_list:
         #print(to_hex(color[0][0]))
         
-        fig = plt.figure(figsize=(2, 2))
+        fig = plt.figure(figsize=(1.5, 1.5))
         plt.axis('off')
         plt.imshow(color)
         #plt.show()
