@@ -18,6 +18,8 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.title("Color Palette Generator")
 st.header("Load any Image to Generate its Color Palette")
+st.write("Palette Generation may take a few seconds after loading the image")
+
 uploaded_file = st.file_uploader("", type=['jpg','png','jpeg'])
 if uploaded_file is not None:
     image = io.imread(uploaded_file)
