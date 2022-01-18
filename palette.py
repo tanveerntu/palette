@@ -6,8 +6,6 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from matplotlib.colors import to_hex
 
-
-
 st.title("Color Palette Generator")
 st.header("Load any Image to Generate Color Palette of its top 7 Colors")
 st.write("Palette Generation may take a few seconds after loading the image")
