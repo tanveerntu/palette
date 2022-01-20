@@ -44,12 +44,13 @@ if uploaded_file is not None:
 
     # Show color palette
     for color in palette_list:
-        #print(to_hex(color[0][0]))
-        
-        fig = plt.figure(figsize=(1.5, 1.5))
-        plt.axis('off')
-        plt.imshow(color)
-        #plt.show()
-        #st.image(color)
-        st.write(to_hex(color[0][0]))
-        st.pyplot(fig)
+        fig = plt.figure(figsize=(6, 2))
+        st.header(to_hex(color[0][0]))
+        def display_table(fig, figsize=(5,5)):
+            "example of displaying a table in streamlit"
+            fig, ax = plt.subplots(figsize=figsize)
+            plt.axis('off')
+            plt.imshow(color, aspect='auto')
+            st.pyplot(fig)
+
+        display_table(fig, figsize=(10,3))
