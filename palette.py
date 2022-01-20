@@ -53,4 +53,4 @@ if uploaded_file is not None:
             plt.imshow(color, aspect='auto')
             st.pyplot(fig)
 
-        display_table(fig, figsize=(10,3))
+        display_table(fig, figsize=(10,5))
