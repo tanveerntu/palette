@@ -16,11 +16,7 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.set_page_config(
-    page_title = 'Color Palette Generator',
-    page_icon = '✅',
-    layout = 'wide'
-)
+
 
 st.title("Color Palette Generator")
 st.header("Load any Image to Generate its Color Palette")
