@@ -6,6 +6,12 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from matplotlib.colors import to_hex
 
+st.set_page_config(
+    page_title = 'Color Palette Generator',
+    page_icon = '✅',
+    layout = 'wide'
+)
+
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
