@@ -117,21 +117,6 @@ if uploaded_file is not None:
 
 
             ###########
-            #Making elbow plot to see optimum clusters
 
-        # elbow method to identify optimal value of K
-    with st.spinner("Generating Elbow Plot to identify optimum number of palettes/clusters...."):
-        sse = [] #sume of squares
-        for k in range(1, 20):
-            km = KMeans(n_clusters=k)
-            km.fit(data)
-            sse.append(km.inertia_)
 
-        # plot to identify the elbow
-        fig2 = plt.figure(figsize=(6, 3))
-        plt.plot(range(1, 20), sse, '-o', c = 'maroon')
-        plt.xlabel('Count of Clusters')
-        plt.ylabel('SSE')
-        st.subheader("Elbow Plot to identify optimum number of palettes/clusters")
-        st.pyplot(fig2)
 
